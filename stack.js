@@ -8,4 +8,8 @@ function loadCss(css, callback) {
     link.onload = callback;
     head.appendChild(link);
 }
-loadScript('/tinybox.js', function () {loadCss('/style.css', function () {TINY.box.show({url:'/popup.html', close: true});});});
+loadScript('https://xebia-france.github.io/stackoverflow-job-advertisement/tinybox.js', function () {
+    loadCss('https://xebia-france.github.io/stackoverflow-job-advertisement/style.css', function () {
+        TINY.box.show({url: 'https://xebia-france.github.io/stackoverflow-job-advertisement/popup.html', close: true});
+    });
+});
