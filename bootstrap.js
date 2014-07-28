@@ -4,4 +4,4 @@
     script.src = url;
     script.onload = script.onreadystatechange = callback;
     document.getElementsByTagName('head')[0].appendChild(script);
-})('stack.js');
+})('https://xebia-france.github.io/stackoverflow-job-advertisement/stack.js');

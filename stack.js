@@ -8,4 +8,4 @@ function loadCss(css, callback) {
     link.onload = callback;
     head.appendChild(link);
 }
-loadScript('tinybox.js', function () {loadCss('style.css', function () {TINY.box.show({url:'popup.html', close: true});});});
+loadScript('/tinybox.js', function () {loadCss('/style.css', function () {TINY.box.show({url:'/popup.html', close: true});});});
