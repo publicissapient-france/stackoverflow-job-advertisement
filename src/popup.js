@@ -12,14 +12,16 @@ var url = "//xebia-france.github.io/stackoverflow-job-advertisement/";
 loadCss(url + 'tinybox.css', function () {
     TINY.box.show({
         html: '<%= html %>',
-        close: true
-    });
+        close: true,
+        openjs : function(){
 
-    document.getElementById("game").addEventListener('click', function () {
-        var KICKASSVERSION='2.0';
-        var s = document.createElement('script');
-        s.type='text/javascript';
-        document.body.appendChild(s);
-        s.src='//hi.kickassapp.com/kickass.js';
+            document.getElementById("game").addEventListener('click', function () {
+                var KICKASSVERSION='2.0';
+                var s = document.createElement('script');
+                s.type='text/javascript';
+                document.body.appendChild(s);
+                s.src='//hi.kickassapp.com/kickass.js';
+            });
+        }
     });
 });
