@@ -3,6 +3,16 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script>
+        window.loadScript=function(url,callback){
+            var d=document,s=d.createElement('script');
+            s.type='text/javascript';
+            s.src=url;
+            s.onload=s.onreadystatechange=callback;
+            d.getElementsByTagName('head')[0].appendChild(s);
+        }
+    </script>
+    <script src="popup.js"></script>
 </head>
 <body>
 <h1>Copy/Paste</h1>

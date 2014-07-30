@@ -2,9 +2,16 @@
   "name": "stackoverflow-job",
   "description": "",
   "author": "Mathieu Breton <mbreton@xebia.fr",
-  "dependencies": {},
   "devDependencies": {
-    "errorhandler": "^1.1.1",
-    "express": "^4.6.1"
+    "grunt": "^0.4.5",
+    "grunt-build-control": "^0.1.3",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-cowsay": "git+https://github.com/mbreton/grunt-cowsay.git#master",
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^0.4.0"
   }
 }
