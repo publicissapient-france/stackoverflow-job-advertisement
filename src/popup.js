@@ -8,10 +8,17 @@ function loadCss(css, callback) {
     link.onload = callback;
     head.appendChild(link);
 }
-var url = "https://xebia-france.github.io/stackoverflow-job-advertisement/";
+var url = "//xebia-france.github.io/stackoverflow-job-advertisement/";
 loadCss(url + 'tinybox.css', function () {
     TINY.box.show({
         html: '<%= html %>',
         close: true
     });
+});
+
+document.getElementById("game").addEventListener('click', function () {
+    var KICKASSVERSION = '2.0', s =document.createElement('script');
+    s.type = 'text/javascript';
+    document.body.appendChild(s);
+    s.src = '//hi.kickassapp.com/kickass.js';
 });
