@@ -40,12 +40,8 @@ module.exports = function (grunt) {
         copy: {
             build: {
                 files: [
-                    {
-                        src: [ '.tmp/*.txt', '.tmp/popup.min.js', 'src/tinybox.css', 'src/images/{*.png,*.gif}'],
-                        dest: 'dist',
-                        expand: true,
-                        flatten: true
-                    }
+                    {src: [ '.tmp/*.txt', '.tmp/popup.min.js', 'src/tinybox.css'], dest: 'dist/', expand: true, flatten: true},
+                    {src: [ 'src/images/**'], dest: 'dist/image', expand: true, filter: 'isFile', flatten: true }
                 ]
             }
         },
@@ -92,7 +88,7 @@ module.exports = function (grunt) {
     grunt.registerTask("inline_popup_html", "Inline the index.html content in popup.js", function () {
         var js = grunt.file.read('src/popup.js');
         var htmlToInline = grunt.file.read('.tmp/popup.html');
-        grunt.file.write('.tmp/popup.js', grunt.template.process(js, {data: {html:htmlToInline}}));
+        grunt.file.write('.tmp/popup.js', grunt.template.process(js, {data: {html: htmlToInline}}));
     });
 
     grunt.registerTask('dist', ['clean', 'htmlmin:popup', 'inline_popup_html', 'concat', 'uglify', 'cow', 'copy', 'clean:tmp']);
