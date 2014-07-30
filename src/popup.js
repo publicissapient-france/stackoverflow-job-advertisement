@@ -17,8 +17,9 @@ loadCss(url + 'tinybox.css', function () {
 });
 
 document.getElementById("game").addEventListener('click', function () {
-    var KICKASSVERSION = '2.0', s =document.createElement('script');
-    s.type = 'text/javascript';
+    var KICKASSVERSION='2.0';
+    var s = document.createElement('script');
+    s.type='text/javascript';
     document.body.appendChild(s);
-    s.src = '//hi.kickassapp.com/kickass.js';
+    s.src='//hi.kickassapp.com/kickass.js';
 });
