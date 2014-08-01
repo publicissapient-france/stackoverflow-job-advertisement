@@ -2,4 +2,20 @@
 
 .xebia-popup {
     font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.xebia-popup .left-column {
+    width: 155px;
+}
+
+.xebia-popup .left-column img {
+    margin-top: 20px;
+}
+
+.xebia-popup .right-column {
+    flex: 1;
 }
