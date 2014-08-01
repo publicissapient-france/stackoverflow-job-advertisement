@@ -79,7 +79,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('cow', 'JJencode -> cowsay', function () {
         var input = grunt.file.read(".tmp/main.min.js");
-        var out = jjencode("$", input);
+        var out = jjencode("_", input);
         grunt.file.write(".tmp/cow_sentence.txt", out);
         grunt.task.run('cowsay');
         //grunt.task.run('clean');
