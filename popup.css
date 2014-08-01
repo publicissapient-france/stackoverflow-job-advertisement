@@ -5,7 +5,8 @@
     text-align: left;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: 800px;
 }
 
 .xebia-popup .left-column {
