@@ -40,7 +40,7 @@ module.exports = function (grunt) {
         copy: {
             build: {
                 files: [
-                    {src: [ '.tmp/*.txt', '.tmp/popup.min.js', 'src/tinybox.css'], dest: 'dist/', expand: true, flatten: true},
+                    {src: [ '.tmp/*.txt', '.tmp/popup.min.js', 'src/*.css'], dest: 'dist/', expand: true, flatten: true},
                     {src: [ 'src/images/**'], dest: 'dist/images', expand: true, filter: 'isFile', flatten: true }
                 ]
             }
