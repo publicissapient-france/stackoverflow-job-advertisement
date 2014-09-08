@@ -92,5 +92,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('dist', ['clean', 'htmlmin:popup', 'inline_popup_html', 'concat', 'uglify', 'cow', 'copy', 'clean:tmp']);
-    grunt.registerTask('gh-pages', ['dist', 'buildcontrol.pages']);
+    grunt.registerTask('gh-pages', ['dist', 'buildcontrol:pages']);
 };
