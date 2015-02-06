@@ -15,7 +15,6 @@
 
 .xebia-popup .left-column {
     width: 155px;
-    margin-left: 20px;
 }
 
 .xebia-popup .left-column img {
@@ -24,4 +23,5 @@
 
 .xebia-popup .right-column {
     flex: 1;
+    margin-left: 20px;
 }
