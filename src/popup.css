@@ -9,8 +9,13 @@
     max-width: 800px;
 }
 
+.tinner{
+  min-width:476px;
+}
+
 .xebia-popup .left-column {
     width: 155px;
+    margin-left: 20px;
 }
 
 .xebia-popup .left-column img {
