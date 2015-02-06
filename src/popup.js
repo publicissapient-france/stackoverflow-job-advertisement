@@ -13,7 +13,7 @@ loadCss(url + 'tinybox.css', function () {
     TINY.box.show({
         html: '<%= html %>',
         close: true,
-        height: 226,
+        height: 257,
         openjs: function () {
 
             document.getElementById("game").addEventListener('click', function () {
