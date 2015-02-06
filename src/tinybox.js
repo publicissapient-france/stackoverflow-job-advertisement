@@ -20,9 +20,9 @@ TINY.box=function(){
 			p.id=v.boxid; m.id=v.maskid; j.style.position=v.fixed?'fixed':'absolute';
 			if(v.html&&!v.animate){
 				p.style.backgroundImage='none'; b.innerHTML=v.html; b.style.display='';
-				p.style.width=v.width?v.width+'px':'auto'; p.style.height=v.height?v.height+'px':'auto'
+				p.style.width=v.width?v.width+'px':'auto'; p.style.height='auto'
 			}else{
-				b.style.display='none'; 
+				b.style.display='none';
 				if(!v.animate&&v.width&&v.height){
 					p.style.width=v.width+'px'; p.style.height=v.height+'px'
 				}else{
@@ -73,7 +73,7 @@ TINY.box=function(){
 			var t;
 			if(typeof v.top!='undefined'){t=v.top}else{t=(this.height()/v.topsplit)-(j.offsetHeight/2); t=t<20?20:t}
 			if(!v.fixed&&!v.top){t+=this.top()}
-			j.style.top=t+'px'; 
+			j.style.top=t+'px';
 			j.style.left=typeof v.left!='undefined'?v.left+'px':(this.width()/2)-(j.offsetWidth/2)+'px'
 		},
 		alpha:function(e,d,a){
